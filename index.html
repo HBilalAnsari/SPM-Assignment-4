@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickPOS — The Last POS System You'll Ever Need</title>
+  <meta name="description" content="QuickPOS is a modern, cloud-based Point of Sale system with inventory management, sales analytics, and seamless integrations. Get started for free." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Phosphor Icons (lightweight icon set) -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVIGATION ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <span class="logo-icon">Q</span>
+        Quick<span class="gradient-text">POS</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#signup" class="btn btn-primary btn-sm" id="signUpBtn">Sign Up</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Now in 120+ countries
+        </div>
+
+        <h1 class="hero-title">
+          The Last <span class="gradient-text">POS System</span><br />
+          You'll Ever Need
+        </h1>
+
+        <p class="hero-subtitle">
+          Streamline your business with powerful inventory management, real-time
+          sales analytics, and seamless integrations — all in one beautiful dashboard.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#signup" class="btn btn-primary" id="heroCtaBtn">
+            <i class="ph ph-rocket-launch"></i>
+            Get Started for Free
+          </a>
+          <a href="#features" class="btn btn-outline">
+            <i class="ph ph-play-circle"></i>
+            See How It Works
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-value">50K+</div>
+            <div class="stat-label">Active Businesses</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">99.9%</div>
+            <div class="stat-label">Uptime SLA</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">4.9★</div>
+            <div class="stat-label">User Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/hero-mockup.png" alt="QuickPOS dashboard mockup showing sales analytics and inventory management" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FEATURES ======================== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Why QuickPOS</div>
+        <h2 class="section-title">Everything You Need to <span class="gradient-text">Run Your Business</span></h2>
+        <p class="section-subtitle">
+          From inventory tracking to advanced analytics, QuickPOS gives you the
+          tools to grow — without the complexity.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card reveal" id="featureInventory">
+          <div class="feature-icon purple">
+            <i class="ph ph-package"></i>
+          </div>
+          <h3>Inventory Management</h3>
+          <p>Track stock levels in real time, set low-stock alerts, and manage suppliers — all from a single dashboard.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card reveal" id="featureAnalytics">
+          <div class="feature-icon blue">
+            <i class="ph ph-chart-line-up"></i>
+          </div>
+          <h3>Sales Analytics</h3>
+          <p>Visual dashboards and smart reports that turn raw data into actionable insights to boost your revenue.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card reveal" id="featureIntegration">
+          <div class="feature-icon green">
+            <i class="ph ph-plugs-connected"></i>
+          </div>
+          <h3>Easy Integration</h3>
+          <p>Connect with Shopify, WooCommerce, QuickBooks, and 200+ other platforms in just a few clicks.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card reveal" id="featureCloud">
+          <div class="feature-icon orange">
+            <i class="ph ph-cloud-arrow-up"></i>
+          </div>
+          <h3>Cloud Sync</h3>
+          <p>Access your data from anywhere. Automatic backups and 256-bit encryption keep everything safe and secure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PRICING ======================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+        <p class="section-subtitle">
+          No hidden fees. No surprises. Choose the plan that fits your business and scale as you grow.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic -->
+        <div class="pricing-card reveal" id="pricingBasic">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">
+            <span class="currency">$</span>19<span class="period">/mo</span>
+          </div>
+          <p class="plan-desc">Perfect for small businesses just getting started with modern POS.</p>
+          <ul class="features-list">
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> 1 Register</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Inventory Tracking</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Basic Reports</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Email Support</li>
+            <li class="disabled"><span class="check"><i class="ph ph-x-circle"></i></span> Advanced Analytics</li>
+            <li class="disabled"><span class="check"><i class="ph ph-x-circle"></i></span> API Access</li>
+          </ul>
+          <a href="#signup" class="btn btn-outline">Get Started</a>
+        </div>
+
+        <!-- Pro (Featured) -->
+        <div class="pricing-card featured reveal" id="pricingPro">
+          <span class="popular-badge">Most Popular</span>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">
+            <span class="currency">$</span>49<span class="period">/mo</span>
+          </div>
+          <p class="plan-desc">For growing businesses that need powerful features and integrations.</p>
+          <ul class="features-list">
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Up to 5 Registers</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Inventory Management</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Advanced Analytics</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Priority Support</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> 50+ Integrations</li>
+            <li class="disabled"><span class="check"><i class="ph ph-x-circle"></i></span> Custom Branding</li>
+          </ul>
+          <a href="#signup" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-card reveal" id="pricingEnterprise">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price">
+            <span class="currency">$</span>99<span class="period">/mo</span>
+          </div>
+          <p class="plan-desc">Unlimited power for large-scale operations and franchise owners.</p>
+          <ul class="features-list">
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Unlimited Registers</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Full Inventory Suite</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Custom Analytics</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> 24/7 Phone Support</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> 200+ Integrations</li>
+            <li><span class="check"><i class="ph ph-check-circle"></i></span> Custom Branding & API</li>
+          </ul>
+          <a href="#signup" class="btn btn-outline">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-info reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2>Let's Start a <span class="gradient-text">Conversation</span></h2>
+        <p>Have questions about QuickPOS? Want a custom demo? Fill out the form and our team will get back to you within 24 hours.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="icon-circle"><i class="ph ph-envelope-simple"></i></div>
+            <div class="detail-text">
+              <span>Email Us</span>
+              <strong>hello@quickpos.com</strong>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="icon-circle"><i class="ph ph-phone"></i></div>
+            <div class="detail-text">
+              <span>Call Us</span>
+              <strong>+1 (800) 555-0199</strong>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="icon-circle"><i class="ph ph-map-pin"></i></div>
+            <div class="detail-text">
+              <span>Visit Us</span>
+              <strong>123 Innovation Blvd, San Francisco, CA</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <h3>Send Us a Message</h3>
+        <form action="process_contact.php" method="POST" id="contactForm" novalidate>
+          <div class="form-group" id="nameGroup">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName" name="name" placeholder="John Doe" required />
+            <div class="form-error">Please enter your name.</div>
+          </div>
+
+          <div class="form-group" id="emailGroup">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required />
+            <div class="form-error">Please enter a valid email address.</div>
+          </div>
+
+          <div class="form-group" id="messageGroup">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" placeholder="Tell us about your business needs..." required></textarea>
+            <div class="form-error">Please enter your message.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="contactSubmitBtn" style="width:100%;justify-content:center;">
+            <i class="ph ph-paper-plane-tilt"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">Q</span>
+            Quick<span class="gradient-text">POS</span>
+          </a>
+          <p>Empowering businesses worldwide with a modern, intuitive point-of-sale platform that grows with you.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 QuickPOS. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter" id="socialTwitter"><i class="ph ph-twitter-logo"></i></a>
+          <a href="#" aria-label="LinkedIn" id="socialLinkedin"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="#" aria-label="GitHub" id="socialGithub"><i class="ph ph-github-logo"></i></a>
+          <a href="#" aria-label="Instagram" id="socialInstagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
